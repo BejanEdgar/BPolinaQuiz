@@ -18,15 +18,19 @@
             background-repeat: no-repeat; /* Prevents the image from repeating */
             background-attachment: fixed; /* Ensures the image stays fixed while scrolling on PCs */
             background-blend-mode: overlay; /* Makes the gradient visible over the image */
+            /*background: linear-gradient(to bottom right, #095699, #0499a1); /* Stunning blue gradient */
+            /*background-attachment: fixed; /* Keeps background fixed on scroll */
+            /*background-size: cover; /* Ensures the background covers the entire screen */
             padding: 20px;
             color: #333;
         }
         @media (max-width: 900px) {
         body {
-        background-attachment: scroll; /* Fix performance issues on mobile */
-        background-size: auto 100%; /* Scale image height to fit mobile screens */
-            }
+        background-attachment: scroll; /* Fix performance issues on mobile by making background scrollable */
+        background-size: cover; /* Ensure the image still covers the screen */
+        background-position: center; /* Maintain the image center positioning */
         }
+    }
 
 
         h2 {
@@ -195,6 +199,7 @@
             }
         }
 
+        
     </style>
 </head>
 
@@ -278,7 +283,7 @@
             },
             {
                 id: 'q4',
-                text: 'Într-un cerc, toate razele sunt egale.',
+                text: 'Într-un cerc, toate razele sunt egale',
                 options: {
                     A: 'Adevarat',
                     B: 'Fals',
