@@ -24,12 +24,12 @@
             padding: 20px;
             color: #333;
         }
-        @media (max-width: 1000px) {
-        body {
-        background-attachment: scroll; /* Fix performance issues on mobile by making background scrollable */
-        background-size: cover; /* Ensure the image still covers the screen */
-        background-position: center; /* Maintain the image center positioning */
-        }
+        @media (max-width: 900px) {
+    body {
+        background-size: cover; /* Ensures the background image always covers the screen */
+        background-position: center center; /* Keeps the image centered both horizontally and vertically */
+        background-attachment: scroll; /* Fix issues on mobile devices */
+    }
     }
 
 
